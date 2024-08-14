@@ -101,18 +101,18 @@ local function callBluff(isPlayerCalling)
     if isPlayerCalling then
         if totalCount >= computerBetCount then
             computerWins = computerWins + 1
-            message = "You lose! The computer was right."
+            message = "You call and lose! The computer was right."
         else
             playerWins = playerWins + 1
-            message = "You win! The computer bluffed."
+            message = "You call and win! The computer bluffed."
         end
     else
         if totalCount >= playerBetCount then
             playerWins = playerWins + 1
-            message = "Computer loses! You were right."
+            message = "Computer calls and loses! You were right."
         else
             computerWins = computerWins + 1
-            message = "Computer wins! You bluffed."
+            message = "Computer calls and wins! You bluffed."
         end
     end
     
@@ -215,7 +215,7 @@ function love.keypressed(key)
         end
     elseif gameState == "call" then
         if key == "c" then
-            callBluff()
+            callBluff(true)
         elseif key == "r" then
             gameState = "raise"
             playerBetFace = computerBetFace  -- Start with the current bet face value
