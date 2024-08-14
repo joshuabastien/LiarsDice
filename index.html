@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1">
-    <title>Liar&#39;s Dice</title>
+    <title>Liar's Dice</title>
 
     <!-- Load custom style sheet -->
     <link rel="stylesheet" type="text/css" href="theme/love.css">
@@ -12,7 +12,7 @@
   <body>
     <center>
       <div>
-        <h1>Liar&#39;s Dice</h1>
+        <h1>Liar's Dice</h1>
         <canvas id="loadingCanvas" oncontextmenu="event.preventDefault()" width="800" height="600"></canvas>
         <canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
       </div>
@@ -37,12 +37,12 @@
       function drawLoadingText(text) {
         var canvas = loadingContext.canvas;
 
-        loadingContext.fillStyle = "rgb(142, 195, 227)";
+        loadingContext.fillStyle = "#f0f0f0";
         loadingContext.fillRect(0, 0, canvas.scrollWidth, canvas.scrollHeight);
 
-        loadingContext.font = '2em arial';
+        loadingContext.font = '1.8em Georgia';
         loadingContext.textAlign = 'center'
-        loadingContext.fillStyle = "rgb( 11, 86, 117 )";
+        loadingContext.fillStyle = "#333333";
         loadingContext.fillText(text, canvas.scrollWidth / 2, canvas.scrollHeight / 2);
 
         loadingContext.fillText("Powered By Emscripten.", canvas.scrollWidth / 2, canvas.scrollHeight / 4);
@@ -105,7 +105,7 @@
     <script type="text/javascript" src="game.js"></script>
     <script async type="text/javascript" src="love.js" onload="applicationLoad(this)"></script>
     <footer>
-      <p>Built with <a href="https://github.com/Davidobot/love.js">love.js</a> <button onclick="goFullScreen();">Go Fullscreen</button><br>Hint: Reload the page if screen is blank</p>
+      <p>Built with <a href="https://github.com/Davidobot/love.js">love.js</a> <button onclick="goFullScreen();">Go Fullscreen</button><br>Hint: Reload the page if the screen is blank</p>
     </footer>
   </body>
 </html>

@@ -3,22 +3,20 @@
 }
 
 h1 {
-    font-family: arial;
-    color: rgb( 11, 86, 117 );
+    font-family: Georgia, serif;
+    color: #333333;
 }
 
 body {
-    background-image: url(bg.png);
-    background-repeat: no-repeat;
-    font-family: arial;
+    font-family: Georgia, serif;
     margin: 0;
-    padding: none;
-    background-color: rgb( 154, 205, 237 );
-    color: rgb( 28, 78, 104 );
+    padding: 0;
+    background-color: #e0e0e0;
+    color: #333333;
 }
 
 footer {
-    font-family: arial;
+    font-family: Georgia, serif;
     font-size: 12px;
     padding-left: 10px;
     position:absolute;
@@ -31,13 +29,13 @@ a {
     text-decoration: none;
 }
 a:link {
-    color: rgb( 233, 73, 154 );
+    color: #0044cc;
 }
 a:visited {
-    color: rgb( 110, 30, 71 );
+    color: #333333;
 }
 a:hover {
-    color: rgb( 252, 207, 230 );
+    color: #666666;
 }
 
 /* the canvas *must not* have any border or padding, or mouse coords will be wrong */
